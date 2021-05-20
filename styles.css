@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    color: #222222;
+    font-size: 50px;
+    padding: 40px 0px;
+    text-align: center;
+    font-weight: 500;
+}
+
+p{
+    text-align: center;
+    
+}
+
+body {
+    margin-left: 25%;
+}
+
+/* Menu lateral */
+
+.sidenav {
+    margin-left: -10px;
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: 0px 0px 3px #22222259;
+}
+
+.sidenav ul{
+    list-style: none;
+    padding: 0;
+}
+
+.sidenav a,
+.a-title {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #c8c8c8;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    line-height: 20px;
+}
+
+.sidenav a img {
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+}
+
+.a-title {
+    color: #222222;
+}
+
+.sidenav a:hover {
+    color: #222222;
+}
+
+
+/* Conteúdo  */
+
+
+
+.index-gallery {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+}
+
+.container {
+    position: relative;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 255, 255, 0.835);
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text h3 {
+    font-size: 18px;
+    color: #22222271;
+}
+
+.text {
+    color: #222222;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* Back to top   */
+
+.btp {
+    padding: 40px;
+    font-size: 18px;
+    height: 40px;
+    color: #999999;
+    text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+    
+    padding: 15px;
+    font-size: 15px;
+    height: 40px;
+    color: #c8c8c8;
+    text-align: center;
+}
+
+footer a,
+.btp a {
+    text-decoration: none;
+    color: inherit;
+    scroll-behavior: smooth;
+}
+
+
+
+/* pagina contact */
+
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* biografia e contato */
+.text-contact{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.text-contact p{
+    width:100%;
+}
+
+.text-contact>img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 3px #222222;
+}
+
+.social-network{
+    padding: 30px;
+    list-style: none;
+}
+
+.social-network a{
+    text-decoration: none;
+}
+
+.social-network img{
+    width: 30px;
+    height: 30px;
+}
+
+.social-network img:hover{
+    background-color:#22222275;
+}
+
+/* formulario */
+
+fieldset{
+    border: none;
+    text-align: center;
+}
+
+.form-grid{
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+
+
+.form-group{
+    flex: 10px 10px 320px;
+    margin: 10px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 10px;
+    color: #222222;
+}
+
+.form-group input, .form-group textarea{
+    border: none;
+    background: #c8c8c8;
+    padding: 15px 20px;
+    width: 100%;
+    outline: none;
+}
+
+.form-group input:focus, .form-group textarea:focus{
+    box-shadow: 0px 0px 2px 2px  #222222;
+}
+
+.form-group button{
+    border: 3px solid #222222;
+    background: none;
+    color: #222222;
+    padding: 15px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover{
+    background: #222222;
+    color: white;
+}
+
+/* paginas de imagens */
+
+.subtitle{
+    color: #c8c8c8;
+}
+.container-gallery {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  
+  .mySlides {
+    display: none;
+  }
+
+  .slide1 {
+      display: block;
+  }
+  
+
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* botões do slide */
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .numbertext img{
+      height: 1vh;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+/* media queries */
+
+@media (max-width: 700px){
+    body{
+        height: 1vh;
+    }
+    
+    body, main{
+        margin: 15px 0px 30px 0px;
+    }
+
+    .text p{
+        font-size: 35px;
+    }
+
+    h2{
+        font-size: 35px;
+        padding: 20px;
+    }
+    .subtitle, p, .btp{
+        font-size: 15px;
+        margin: 0px 15px 0px 15px;
+    }
+
+    .sidenav{
+        top: -15px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin: 0;
+        
+    }
+   
+    .sidenav a, .a-title{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    
+    .sidenav a img{
+        margin-top: -10px;
+        margin-right: 5px;
+        width: auto;
+        height: 150px;
+    }
+
+  
+    .index-gallery{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    .text-contact p{
+        margin: 0 auto;
+    }
+
+    fieldset {
+        margin: 0 auto;
+    }
+
+    footer {
+        margin-left: 0;
+        padding: 0;
+        font-size: 10px;
+        height: auto;
+        color: #c8c8c8;
+        text-align: center;
+    }
+  
+
+}
+
